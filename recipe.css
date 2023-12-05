@@ -1,0 +1,298 @@
+body{
+    overflow-x: hidden;
+}
+.wrapper{
+    display:flex;
+    padding-left:1150px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    /* padding-left: 70px; */
+    /* position: absolute;
+    top:90px; */
+}
+.wrapper .icon{
+    position: relative;
+    background: white;
+    border-radius: 50%;
+    padding:1px;
+    margin:10px;
+    width:50px;
+    height:50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.wrapper .name{
+    position: absolute;
+    top:0;
+    font-size: 5px , 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0);
+    opacity: 0;
+    pointer-events: none;
+    padding: 4px;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265 , 1.55);
+}
+.wrapper .name::before{
+    position: absolute;
+    content: ""; 
+    height: 8px;
+    width:8px;
+    background: #ffffff;
+    bottom:-3px;
+    left:50%;
+    transform: translate(-50%) rotate(45deg); 
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover .name{
+    top:-45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events:auto;
+}
+.wrapper .icon:hover span,
+.wrapper .icon:hover .name {
+    text-shadow: 0px -1px 0px rgba(0,0,0,0.1);
+}
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .name,
+.wrapper .facebook:hover .name::before{
+    background: #1877f2;
+    color: #ffffff;
+}
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .name,
+.wrapper .twitter:hover .name::before{
+    background: #1877f2;
+    color: #ffffff;
+}
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .name,
+.wrapper .instagram:hover .name::before{
+    background: #ec087a;
+    color: #ffffff;
+}
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .name,
+.wrapper .youtube:hover .name::before{
+    background: #cd201f;
+    color: #ffffff;
+}
+.wrapper .github:hover,
+.wrapper .github:hover .name,
+.wrapper .githuub:hover .name::before{
+    background: #333333;
+    color: #ffffff;
+}
+
+*{
+    padding:0;
+    margin: 0;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.header{
+    /* position: fixed; */
+    margin-top: -30px;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+    background: transparent;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    z-index: 100;
+    
+}
+.im{
+    width:142px;
+    padding-left: 30px;
+    position: absolute;
+    padding-top: 30px;
+}
+.logo{
+    font-size: 72px;
+    color: black;
+    text-decoration: none;
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    color:black ;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+   left: 790px;
+   font-style: oblique;
+   font-size: 23px;
+   }
+.navbar a::before{
+    content: ' ';
+    position: absolute;
+    top:100%;
+    left: 0;
+    width:0;
+    height:2px;
+    background: white;
+    transition: 0.3s;
+}
+.navbar a:hover::before{
+    width:100%;
+    background: black;
+}
+.image1{
+    /* margin-top: -0px; */
+    height:650px;
+    width: 100%;
+    opacity: 0.85;
+    object-fit: cover;    
+    
+}
+.ee{
+    padding-left: 200px;
+    top:90px;
+    position: absolute;
+}
+.card{
+    position:relative;
+    box-shadow: 14px 14px 14px gray;
+}
+.text{
+    position:absolute;
+    bottom:200px;
+    left: 340px;
+    color:black;
+    text-align: center;
+}
+#text1{
+    font-size: 90px;
+    text-align: center;
+}
+#text2{
+    text-align: center;
+    font-size: 40px;
+}
+.card h4{
+    color: black;
+}
+.anchor h4{
+    color:white;
+    text-decoration:none;
+}
+.anchor1{   
+    width: 140px;
+    height:30px;
+    background-color:grey;
+    color:white;
+    text-align: center;
+    border-radius: 20px;
+    padding-top: 10px;
+    justify-content:center;
+    position: absolute;
+    left:300px;
+    transition: 0.5s;
+    max-width: 50%;
+    padding-left:10px;
+    padding-right: 10px;
+    margin-top: 90px;
+}
+.anchor1:hover{
+    transform: scale(1.2);
+}
+.card2{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 40px;
+    font-style: italic;   
+    text-shadow: 4px 4px 4px gray;
+}
+.para1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.para1 div{
+    height:270px;
+    width:335px;
+    margin:60px;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 20px;
+    
+}
+.box1{
+    background-image: url(breakfast2.webp);
+    font-size: 40px;
+    justify-content: center;
+    padding-top:230px;
+    font-weight: bold;
+    background-repeat: no-repeat;
+    color: black;
+    max-width: 70%;
+    transition: 0.3s;
+    box-shadow: 9px 9px 9px gray;
+}
+.box1:hover{
+    transform: scale(1.1);
+}
+.box2{
+    background-image: url(lunch3.jpg);
+    font-size: 40px;
+    justify-content: center;
+    padding-top:230px;
+    font-weight: bold;
+    background-repeat: no-repeat;
+    width: 100%;
+    color: black;
+    max-width: 70%;
+    transition: 0.3s;
+    box-shadow: 9px 9px 9px gray;
+}
+.box2:hover{
+    transform: scale(1.1);
+}
+.box3{
+    background-image: url("DINRR.jpg");
+    font-size: 40px;
+    justify-content: center;
+    padding-top:230px;
+    font-weight: bold;
+    background-repeat: no-repeat;
+    color: black;
+    max-width: 70%;
+    transition: 0.3s;
+    box-shadow: 9px 9px 9px gray;
+}
+.box3:hover{
+    transform: scale(1.1);
+}
+a{
+    text-decoration: none;
+}
+.box4{
+    background-image: url("ssdd.jpg");
+    font-size: 40px;
+    justify-content: center;
+    padding-top:230px;
+    font-weight: bold;
+    background-repeat: no-repeat;
+    color: rgb(22, 13, 13);
+    max-width: 70%;
+    transition: 0.3s;
+    box-shadow: 9px 9px 9px gray;
+}
+.box4:hover{
+    transform: scale(1.1);
+}
+a{
+    text-decoration: none;
+}
